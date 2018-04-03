@@ -1,0 +1,15 @@
+#! usr/bin/env php
+<?php
+
+namespace Structural\Decorator;
+
+require_once 'vendor/autoload.php';
+
+$component = new Component('key', 'value');
+print_r($component->getData());
+
+$xmlDecorator = new XmlDecorator($component);
+print_r($xmlDecorator->getData());
+
+$jsonDecorator = new JsonDecorator($component);
+print_r($jsonDecorator->getData());

@@ -7,3 +7,5 @@
 
 # Decorator | [API](https://github.com/Jagepard/PhpDesignPatterns-AbstractFactory/blob/master/docs.md "Documentation API")
 Декоратор
+
+![Decorator](https://github.com/Jagepard/PhpDesignPatterns-Decorator/blob/master/UML.png)

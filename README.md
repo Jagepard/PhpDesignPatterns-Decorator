@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-498e7f.svg)](https://mit-license.org/)
 -----
 
-# Decorator | [API](https://github.com/Jagepard/PhpDesignPatterns-AbstractFactory/blob/master/docs.md "Documentation API")
+# Decorator | [API](https://github.com/Jagepard/PhpDesignPatterns-Decorator/blob/master/docs.md "Documentation API")
 Декоратор
 
 ![Decorator](https://github.com/Jagepard/PhpDesignPatterns-Decorator/blob/master/UML.png)

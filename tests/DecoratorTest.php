@@ -19,11 +19,10 @@ use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
  */
 class DecoratorTest extends PHPUnit_Framework_TestCase
 {
-
     /**
      * @var Component
      */
-    protected $component;
+    private $component;
 
     protected function setUp(): void
     {
@@ -32,18 +31,26 @@ class DecoratorTest extends PHPUnit_Framework_TestCase
 
     public function testComponent()
     {
-        $this->assertCount(1, $this->component->getData());
+        $this->assertCount(1, $this->getComponent()->getData());
     }
 
     public function testXmlDecorator()
     {
-        $xmlDecorator = new XmlDecorator($this->component);
+        $xmlDecorator = new XmlDecorator($this->getComponent());
         $this->assertEquals("<?xml version=\"1.0\"?>\n<root><key>value</key></root>\n", $xmlDecorator->getData());
     }
 
     public function testJsonDecorator()
     {
-        $jsonDecorator = new JsonDecorator($this->component);
+        $jsonDecorator = new JsonDecorator($this->getComponent());
         $this->assertEquals('{"key":"value"}', $jsonDecorator->getData());
+    }
+
+    /**
+     * @return Component
+     */
+    public function getComponent(): Component
+    {
+        return $this->component;
     }
 }

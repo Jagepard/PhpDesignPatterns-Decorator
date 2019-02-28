@@ -15,11 +15,10 @@ namespace Structural\Decorator;
  */
 class Component extends AbstractComponent
 {
-
     /**
      * @return array
      */
-    public function getData()
+    public function getData(): array
     {
         return $this->data;
     }

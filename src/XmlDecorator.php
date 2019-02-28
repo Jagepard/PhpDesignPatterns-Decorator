@@ -17,14 +17,13 @@ use SimpleXMLElement;
  */
 class XmlDecorator extends AbstractDecorator
 {
-
     /**
      * @return mixed|string
      */
     public function getData()
     {
         $xml = new SimpleXMLElement('<root/>');
-        $data = array_flip($this->component->getData());
+        $data = array_flip($this->getComponent()->getData());
         array_walk_recursive($data, [$xml, 'addChild']);
 
         return $xml->asXML();

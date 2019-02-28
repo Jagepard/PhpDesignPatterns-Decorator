@@ -15,7 +15,7 @@
 | Visibility | Function |
 |:-----------|:---------|
 | public | <strong>__construct(</strong><em>\string</em> <strong>$key</strong>, <em>\string</em> <strong>$value</strong>)</strong> : <em>void</em><br /><em>AbstractComponent constructor.</em> |
-| public | <strong>abstract getData()</strong> : <em>string</em> |
+| public | <strong>abstract getData()</strong> : <em>array</em> |
 
 <hr />
 
@@ -50,6 +50,7 @@
 | Visibility | Function |
 |:-----------|:---------|
 | public | <strong>__construct(</strong><em>[\Structural\Decorator\AbstractComponent](#class-structuraldecoratorabstractcomponent-abstract)</em> <strong>$component</strong>)</strong> : <em>void</em><br /><em>AbstractDecorator constructor.</em> |
+| public | <strong>getComponent()</strong> : <em>[\Structural\Decorator\Component](#class-structuraldecoratorcomponent)</em> |
 | public | <strong>abstract getData()</strong> : <em>string</em> |
 
 <hr />

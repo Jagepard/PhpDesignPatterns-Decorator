@@ -15,7 +15,6 @@ namespace Structural\Decorator;
  */
 abstract class AbstractComponent
 {
-
     /**
      * @var array
      */
@@ -32,7 +31,7 @@ abstract class AbstractComponent
     }
 
     /**
-     * @return string
+     * @return array
      */
-    abstract public function getData();
+    abstract public function getData(): array;
 }

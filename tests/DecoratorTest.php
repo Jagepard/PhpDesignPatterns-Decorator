@@ -9,6 +9,7 @@ declare(strict_types=1);
 
 namespace Structural\Decorator\Tests;
 
+use Structural\Decorator\AbstractComponent;
 use Structural\Decorator\Component;
 use Structural\Decorator\XmlDecorator;
 use Structural\Decorator\JsonDecorator;
@@ -20,7 +21,7 @@ use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 class DecoratorTest extends PHPUnit_Framework_TestCase
 {
     /**
-     * @var Component
+     * @var AbstractComponent
      */
     private $component;
 
@@ -49,7 +50,7 @@ class DecoratorTest extends PHPUnit_Framework_TestCase
     /**
      * @return Component
      */
-    public function getComponent(): Component
+    public function getComponent(): AbstractComponent
     {
         return $this->component;
     }

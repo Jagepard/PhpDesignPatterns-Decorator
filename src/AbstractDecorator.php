@@ -15,11 +15,10 @@ namespace Structural\Decorator;
  */
 abstract class AbstractDecorator
 {
-
     /**
      * @var Component
      */
-    protected $component;
+    private $component;
 
     /**
      * AbstractDecorator constructor.
@@ -28,6 +27,14 @@ abstract class AbstractDecorator
     public function __construct(AbstractComponent $component)
     {
         $this->component = $component;
+    }
+
+    /**
+     * @return Component
+     */
+    public function getComponent(): Component
+    {
+        return $this->component;
     }
 
     /**

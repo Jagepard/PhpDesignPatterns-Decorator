@@ -9,10 +9,6 @@ declare(strict_types=1);
 
 namespace Structural\Decorator;
 
-/**
- * Class JsonDecorator
- * @package Structural\Decorator
- */
 class JsonDecorator extends AbstractDecorator
 {
     /**

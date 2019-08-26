@@ -9,10 +9,6 @@ declare(strict_types=1);
 
 namespace Structural\Decorator;
 
-/**
- * Class Component
- * @package Structural\Decorator
- */
 class Component extends AbstractComponent
 {
     /**

@@ -11,10 +11,6 @@ namespace Structural\Decorator;
 
 use SimpleXMLElement;
 
-/**
- * Class XmlDecorator
- * @package Structural\Decorator
- */
 class XmlDecorator extends AbstractDecorator
 {
     /**

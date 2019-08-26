@@ -15,9 +15,6 @@ use Structural\Decorator\XmlDecorator;
 use Structural\Decorator\JsonDecorator;
 use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 
-/**
- * Class DecoratorTest
- */
 class DecoratorTest extends PHPUnit_Framework_TestCase
 {
     /**

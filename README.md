@@ -6,6 +6,8 @@
 -----
 
 # Decorator | [API](https://github.com/Jagepard/PhpDesignPatterns-Decorator/blob/master/docs.md "Documentation API")
+```php run``` Запустить исполнение шаблона в терминале
+
 Декоратор
 
 ![Decorator](https://github.com/Jagepard/PhpDesignPatterns-Decorator/blob/master/UML.png)

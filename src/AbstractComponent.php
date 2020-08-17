@@ -3,31 +3,20 @@
 declare(strict_types=1);
 
 /**
- * @author    : Korotkov Danila <dankorot@gmail.com>
- * @license   https://mit-license.org/ MIT
+ * @author  : Jagepard <jagepard@yandex.ru>
+ * @license https://mit-license.org/ MIT
  */
 
 namespace Structural\Decorator;
 
 abstract class AbstractComponent
 {
-    /**
-     * @var array
-     */
-    protected $data = [];
+    protected array $data = [];
 
-    /**
-     * AbstractComponent constructor.
-     * @param string $key
-     * @param string $value
-     */
     public function __construct(string $key, string $value)
     {
         $this->data[$key] = $value;
     }
 
-    /**
-     * @return array
-     */
     abstract public function getData(): array;
 }

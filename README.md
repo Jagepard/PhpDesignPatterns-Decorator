@@ -6,8 +6,21 @@
 -----
 
 # Decorator | [API](https://github.com/Jagepard/PhpDesignPatterns-Decorator/blob/master/docs.md "Documentation API")
-```php run``` Запустить исполнение шаблона в терминале
 
-Декоратор
+```php main.php``` execute in terminal
 
-![Decorator](https://github.com/Jagepard/PhpDesignPatterns-Decorator/blob/master/UML.png)
+## Result:
+```
+Initial data:
+Array
+(
+    [key] => value
+)
+
+Decorate to xml data:
+<?xml version="1.0"?>
+<root><key>value</key></root>
+
+Decorate to json data:
+{"key":"value"}
+```

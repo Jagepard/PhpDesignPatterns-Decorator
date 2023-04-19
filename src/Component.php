@@ -12,6 +12,10 @@ namespace Structural\Decorator;
 class Component extends AbstractComponent
 {
     /**
+     * Receives data
+     * -------------
+     * Получает данные
+     *
      * @return array
      */
     public function getData(): array

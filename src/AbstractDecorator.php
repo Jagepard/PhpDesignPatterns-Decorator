@@ -13,11 +13,25 @@ abstract class AbstractDecorator
 {
     private AbstractComponent $component;
 
+    /**
+     * Installs a component
+     * --------------------
+     * Устанавливает компонент
+     *
+     * @param  AbstractComponent $component
+     */
     public function __construct(AbstractComponent $component)
     {
         $this->component = $component;
     }
 
+    /**
+     * Gets a component
+     * ----------------
+     * Получает компонент
+     *
+     * @return AbstractComponent
+     */
     public function getComponent(): AbstractComponent
     {
         return $this->component;

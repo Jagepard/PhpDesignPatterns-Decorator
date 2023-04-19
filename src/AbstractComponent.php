@@ -13,6 +13,14 @@ abstract class AbstractComponent
 {
     protected array $data = [];
 
+    /**
+     * Sets data
+     * ---------
+     * Устанавливает данные
+     *
+     * @param  string $key
+     * @param  string $value
+     */
     public function __construct(string $key, string $value)
     {
         $this->data[$key] = $value;

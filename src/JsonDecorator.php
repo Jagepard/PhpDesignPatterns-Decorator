@@ -11,6 +11,13 @@ namespace Structural\Decorator;
 
 class JsonDecorator extends AbstractDecorator
 {
+    /**
+     * Receives data
+     * -------------
+     * Получает данные
+     *
+     * @return string
+     */
     public function getData(): string
     {
         return json_encode($this->getComponent()->getData());

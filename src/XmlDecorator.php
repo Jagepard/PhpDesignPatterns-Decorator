@@ -13,6 +13,13 @@ use SimpleXMLElement;
 
 class XmlDecorator extends AbstractDecorator
 {
+    /**
+     * Receives data
+     * -------------
+     * Получает данные
+     *
+     * @return string
+     */
     public function getData(): string
     {
         $xml = new SimpleXMLElement('<root/>');
